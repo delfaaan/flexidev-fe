@@ -61,12 +61,12 @@ const CharacterList: React.FC = () => {
 	return (
 		<div>
 			<div style={{ textAlign: 'center', marginBottom: '20px' }}>
-				<img src='/star-wars-logo.svg' alt="Star Wars Logo" style={{ width: '300px', height: 'auto' }} />
+				<img src='./star-wars-logo.svg' alt="Star Wars Logo" style={{ width: '300px', height: 'auto' }} />
 			</div>
 			<ul>
 				{characters.map((character) => (
 					<li key={character.url}>
-						<a href={`/character/${character.url.split('/').filter(Boolean).pop()}`}>
+						<a href={`/flexidev-fe/#/character/${character.url.split('/').filter(Boolean).pop()}`}>
 							{character.name}
 						</a>
 					</li>
